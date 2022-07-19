@@ -4821,8 +4821,13 @@
       <change afterPath="$PROJECT_DIR$/../music_app/venv/share/python-wheels/urllib3-1.25.8-py2.py3-none-any.whl" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../music_app/venv/share/python-wheels/webencodings-0.5.1-py2.py3-none-any.whl" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../music_app/venv/share/python-wheels/wheel-0.34.2-py2.py3-none-any.whl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/account/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/account/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/account/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/account/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/applications/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/account/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/product/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/product/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/product/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/product/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/product/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../week7/lesson3.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../week7/lesson3.py" afterDir="false" />
@@ -4851,11 +4856,11 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "last_opened_file_path": "/home/vlad/Desktop/py21/django/shop"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;last_opened_file_path&quot;: &quot;/home/vlad/Desktop/py21/django/shop&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="shop" />
@@ -4889,5 +4894,16 @@
       <updated>1657718984591</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
