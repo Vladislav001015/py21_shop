@@ -4821,11 +4821,8 @@
       <change afterPath="$PROJECT_DIR$/../music_app/venv/share/python-wheels/urllib3-1.25.8-py2.py3-none-any.whl" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../music_app/venv/share/python-wheels/webencodings-0.5.1-py2.py3-none-any.whl" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../music_app/venv/share/python-wheels/wheel-0.34.2-py2.py3-none-any.whl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/account/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/account/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/account/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/account/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/product/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/product/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/applications/product/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/product/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/product/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/product/serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applications/product/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/product/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/applications/product/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/applications/product/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shop/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/shop/settings.py" afterDir="false" />

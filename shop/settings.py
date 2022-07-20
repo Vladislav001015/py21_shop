@@ -41,6 +41,8 @@ INSTALLED_APPS = [
 
     'rest_framework',
     'rest_framework.authtoken',
+    'django_filters',
+    'drf_yasg',
 
     # my apps
     'applications.account',
@@ -152,4 +154,8 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication'  #
     ],
+    # 'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination', # глобальная пагинация
+    # 'PAGE_SIZE': 1
+    # 'DEFAULT_PERMISSION_CLASSES':
+    #     ['rest_framework.permissions.IsAuthenticated']
 }

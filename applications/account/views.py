@@ -11,6 +11,7 @@ from applications.account.serializers import RegisterSerializer, LoginSerializer
 
 User = get_user_model()
 
+
 class RegisterApiView(APIView):
     def post(self, request):
         data = request.data
