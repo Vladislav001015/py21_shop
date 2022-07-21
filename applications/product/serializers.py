@@ -1,6 +1,6 @@
 from rest_framework import serializers
 
-from applications.product.models import Category, Product, Image
+from applications.product.models import Category, Product, Image, Rating
 
 
 class CategorySerializer(serializers.ModelSerializer):
@@ -43,3 +43,16 @@ class ProductSerializer(serializers.ModelSerializer):
             Image.objects.create(product=product, image=image)
 
         return product
+
+    def to_representation(self, instance):
+        representation = super().to_representation(instance)
+        # print(instance.likes.filter(like=True).count())
+        representation['likes'] = instance.likes.filter(like=True).count()
+        representation['rating'] = 0
+        # TODO: Отобразить рейтинг
+        return representation
+
+
+
+class RatingSerializer(serializers.Serializer):
+    rating = serializers.IntegerField(required=True, min_value=1, max_value=5)

@@ -2,15 +2,16 @@ from django.shortcuts import render
 
 # Create your views here.
 from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework.decorators import action
 from rest_framework.filters import OrderingFilter, SearchFilter
 from rest_framework.pagination import PageNumberPagination
 from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly, IsAdminUser
 from rest_framework.response import Response
 from rest_framework.viewsets import ViewSet, ModelViewSet
 
-from applications.product.models import Category, Product
+from applications.product.models import Category, Product, Like, Rating
 from applications.product.permissions import CustomIsAdmin
-from applications.product.serializers import CategorySerializer, ProductSerializer
+from applications.product.serializers import CategorySerializer, ProductSerializer, RatingSerializer
 
 
 class LargeResultsSetPagination(PageNumberPagination):
@@ -38,6 +39,36 @@ class ProductView(ModelViewSet):
 
     def perform_create(self, serializer):
         serializer.save(owner=self.request.user)
+
+
+    # ...product/1/like/
+    @action(methods=['POST'], detail=True)
+    def like(self, request, pk, *args, **kwargs):
+        # print(pk)
+        try:
+            like_object, _ = Like.objects.get_or_create(owner=request.user, product_id=pk)
+            like_object.like = not like_object.like
+            like_object.save()
+            status = 'liked'
+
+            if like_object.like:
+                return Response({'status': status})
+            status = 'unliked'
+            return Response({'status': status})
+        except:
+            return Response('Нет такого продукта!')
+
+    @action(methods=['POST'], detail=True)
+    def rating(self, request, pk, *args, **kwargs):
+        serializers = RatingSerializer(data=request.data)
+        serializers.is_valid(raise_exception=True)
+        obj, _ = Rating.objects.get_or_create(product_id=pk,
+                                              owner=request.user)
+        obj.rating = request.data['rating']
+        obj.save()
+        return Response(request.data, status=201)
+
+
 
     # def get_queryset(self):
     #     queryset = super().get_queryset()
